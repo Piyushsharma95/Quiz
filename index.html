@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immigration Assessment - Start Your Journey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Landing Page -->
+    <div id="landing-page" class="page active">
+        <div class="landing-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Start Your Immigration Journey</h1>
+                <p class="hero-subtitle">Take our quick assessment to understand your immigration options</p>
+                <button id="start-now-btn" class="btn-primary">Start Now</button>
+            </div>
+            <div class="hero-image">
+                <div class="illustration"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Form Page -->
+    <div id="form-page" class="page">
+        <div class="form-container">
+            <h2>Tell Us About Yourself</h2>
+            <form id="user-form">
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label for="age">Age *</label>
+                    <input type="number" id="age" name="age" required min="18" max="100" placeholder="Enter your age">
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender *</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">Select gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                        <option value="prefer-not-to-say">Prefer not to say</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-primary">Begin Quiz</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Quiz Page -->
+    <div id="quiz-page" class="page">
+        <div class="quiz-container">
+            <div class="quiz-header">
+                <div class="progress-bar">
+                    <div id="progress-fill" class="progress-fill"></div>
+                </div>
+                <div class="quiz-info">
+                    <span id="question-number">Question 1 of 5</span>
+                    <span id="timer" class="timer">30</span>
+                </div>
+            </div>
+            <div class="quiz-content">
+                <h2 id="question-text" class="question-text"></h2>
+                <div id="options-container" class="options-container"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Results Page -->
+    <div id="results-page" class="page">
+        <div class="results-container">
+            <div class="results-icon">✓</div>
+            <h2>Quiz Completed!</h2>
+            <p id="results-message">Your results are being sent to the administrator.</p>
+            <button id="restart-btn" class="btn-primary">Start Over</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
