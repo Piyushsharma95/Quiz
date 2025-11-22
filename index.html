@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immigration Assessment - Start Your Journey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Landing Page -->
+    <div id="landing-page" class="page active">
+        <!-- Animated Particles Background -->
+        <div class="particles-container">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="landing-wrapper">
+            <div class="landing-content">
+                <!-- Hero Section -->
+                <div class="hero-section">
+                    <div class="hero-badge">
+                        <span class="badge-text">🚀 New Opportunity Awaits</span>
+                    </div>
+                    
+                    <h1 class="hero-main-title">
+                        <span class="title-line">Transform Your Future</span>
+                        <span class="title-line highlight">Through Immigration</span>
+                    </h1>
+                    
+                    <p class="hero-description">
+                        Discover your perfect immigration pathway with our intelligent assessment.<br>
+                        Get personalized recommendations in just 5 minutes.
+                    </p>
+                    
+                    <button id="start-now-btn" class="cta-button">
+                        <span class="btn-text">Begin Your Journey</span>
+                        <span class="btn-shine"></span>
+                    </button>
+                    
+                    <!-- Stats Section -->
+                    <div class="stats-section">
+                        <div class="stat-item">
+                            <div class="stat-number">1000+</div>
+                            <div class="stat-label">Success Stories</div>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <div class="stat-number">5 Min</div>
+                            <div class="stat-label">Quick Assessment</div>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <div class="stat-number">95%</div>
+                            <div class="stat-label">Accuracy Rate</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Visual Elements -->
+                <div class="visual-elements">
+                    <div class="main-circle circle-1"></div>
+                    <div class="main-circle circle-2"></div>
+                    <div class="main-circle circle-3"></div>
+                    
+                    <!-- Floating Icons -->
+                    <div class="icon-group group-1">
+                        <div class="float-icon">🌎</div>
+                        <div class="float-icon">✈️</div>
+                        <div class="float-icon">🏆</div>
+                    </div>
+                    <div class="icon-group group-2">
+                        <div class="float-icon">📋</div>
+                        <div class="float-icon">✅</div>
+                        <div class="float-icon">💼</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Features Grid -->
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="card-icon">⚡</div>
+                    <h3 class="card-title">Lightning Fast</h3>
+                    <p class="card-text">Complete assessment in just 5 minutes</p>
+                </div>
+                <div class="feature-card">
+                    <div class="card-icon">🎯</div>
+                    <h3 class="card-title">Precise Results</h3>
+                    <p class="card-text">AI-powered personalized recommendations</p>
+                </div>
+                <div class="feature-card">
+                    <div class="card-icon">🔒</div>
+                    <h3 class="card-title">Secure & Private</h3>
+                    <p class="card-text">Your data is safe and confidential</p>
+                </div>
+                <div class="feature-card">
+                    <div class="card-icon">📊</div>
+                    <h3 class="card-title">Detailed Report</h3>
+                    <p class="card-text">Comprehensive PDF report delivered</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Form Page -->
+    <div id="form-page" class="page">
+        <div class="form-container">
+            <h2>Tell Us About Yourself</h2>
+            <form id="user-form">
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label for="age">Age *</label>
+                    <input type="number" id="age" name="age" required min="18" max="100" placeholder="Enter your age">
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender *</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">Select gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                        <option value="prefer-not-to-say">Prefer not to say</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-primary">Begin Quiz</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Quiz Page -->
+    <div id="quiz-page" class="page">
+        <div class="quiz-container">
+            <div class="quiz-header">
+                <div class="progress-bar">
+                    <div id="progress-fill" class="progress-fill"></div>
+                </div>
+                <div class="quiz-info">
+                    <span id="question-number">Question 1 of 5</span>
+                    <span id="timer" class="timer">30</span>
+                </div>
+            </div>
+            <div class="quiz-content">
+                <h2 id="question-text" class="question-text"></h2>
+                <div id="options-container" class="options-container"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Results Page -->
+    <div id="results-page" class="page">
+        <div class="results-container">
+            <div class="results-icon">✓</div>
+            <h2>Quiz Completed!</h2>
+            <p id="results-message">Your results are being sent to the administrator.</p>
+            <button id="restart-btn" class="btn-primary">Start Over</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
